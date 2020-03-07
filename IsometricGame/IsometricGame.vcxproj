@@ -71,22 +71,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Libraries\cpp\pugixml-1.10\src;D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Libraries\cpp\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Libraries\cpp\pugixml-1.10\src;D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Libraries\cpp\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Libraries\cpp\pugixml-1.10\src;D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Libraries\cpp\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Libraries\cpp\pugixml-1.10\src;D:\Libraries\cpp\SFML-2.5.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Libraries\cpp\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -150,7 +150,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Libraries\cpp\pugixml-1.10\src\PUGUXML\pugixml.cpp" />
+    <ClCompile Include="src\SpriteFactory.cpp" />
     <ClCompile Include="src\Source.cpp" />
+    <ClCompile Include="src\Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="resources\sansation.ttf" />
@@ -162,6 +165,12 @@
     <Image Include="resources\tile.bmp" />
     <Image Include="resources\tile.png" />
     <Image Include="resources\tile_hl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Libraries\cpp\pugixml-1.10\src\PUGUXML\pugiconfig.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Libraries\cpp\pugixml-1.10\src\PUGUXML\pugixml.hpp" />
+    <ClInclude Include="src\SpriteFactory.h" />
+    <ClInclude Include="src\Tile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
